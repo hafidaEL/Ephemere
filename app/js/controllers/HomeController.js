@@ -1,3 +1,4 @@
+console.log('Hello');
 app.controller('HomeController', function($scope, Resto) {
         $scope.today = new Date();
 

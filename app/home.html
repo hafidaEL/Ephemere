@@ -9,7 +9,7 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -98,10 +98,21 @@
 
     <!-- Page Content -->
     <div class="container" ng-controller="HomeController">
+        <div class="carte_chef">
+            <div id="chef">
+                <h1>Chef du mois</h1>
+                 <img ng-src="{{ infos.resto.chef.photo }}" alt="">
+            </div>
+            <div id="descr_chef">
+                <h2>{{ infos.resto.chef.nom }}  {{ infos.resto.chef.prenom }}</h2>
+                <span>Nombre d'étoiles : {{ infos.resto.chef.nbEtoiles }}</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia incidunt ipsam qui saepe harum aliquam at reiciendis, in odio nulla!</p>
+            </div>
+        </div>
 
-        <div>
-            <h1>Chef du mois</h1>
-             <img ng-src="{{ infos.resto.chef.photo }}" alt="">
+        <div class="menu">
+            <h1>MENU du chef</h1>
+            <img ng-src="{{ infos.resto.chef.logo_menu }}" alt="">
         </div>
 
         <hr>

@@ -133,3 +133,35 @@ footer {
     
 }
 
+
+/*!
+* CSS pour carte du cuisinier
+*
+*/
+
+.carte_chef{
+    border: 1px solid grey;
+    height: 300px;
+    display: flex;
+}
+
+#chef{
+    width: 30%;
+}
+
+#chef img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+#descr_chef{
+    width: 70%;
+}
+
+.menu{
+    border: 1px solid grey;
+    height: 300px;
+    display: flex;
+}
