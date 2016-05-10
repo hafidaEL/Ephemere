@@ -1,0 +1,36 @@
+{
+    "resto": {
+        "titre": "le titre",
+        "headerImg" : "images/fond4.png",
+        "chef": {
+            "nom": "Charles",
+            "prenom": "Hingalls",
+            "age": 45,
+            "photo" : "https://randomuser.me/api/portraits/med/men/80.jpg"
+        },
+        "menu": {
+            "entrees": [{
+                "nom": "Pied de poulet",
+                "prix": 5
+            }, {
+                "nom": "surimi",
+                "prix": 2
+            }],
+            "plats": [{
+                "nom": "karane",
+                "prix": 58
+            }, {
+                "nom": "tajine",
+                "prix": 26
+            }],
+            "desserts": [{
+                "nom": "tiramisu",
+                "prix": 5
+            }, {
+                "nom": "fondant au chocolat",
+                "prix": 2
+            }]
+        }
+
+    }
+}

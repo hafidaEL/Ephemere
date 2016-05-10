@@ -1,0 +1,40 @@
+{
+    "resto": {
+        "titre": "le titre",
+        "headerImg" : "https://www.maison-des-drapeaux.com/pics/maroc-7009b.gif",
+        "chef": {
+            "nom": "Charles",
+            "prenom": "Hingalls",
+            "age": 45,
+            "photo" : "https://randomuser.me/api/portraits/med/men/80.jpg"
+        },
+        "menu": {
+            "entrees": [{
+                "nom": "Pied de poulet",
+                "description": "des succulents pieds de poulet",
+                "prix": 5
+            }, {
+                "nom": "surimi",
+                 "description": "des batons de surimi",
+                "prix": 2
+            }],
+            "plats": [{
+                "nom": "karane",
+                "description": "farine de poichiches fondante (origine Oujda)",
+                "prix": 58
+            }, {
+                "nom": "tajine",
+                 "description": "formidable douaz aux saveurs inoubliables",
+                "prix": 26
+            }],
+            "desserts": [{
+                "nom": "tiramisu",
+                "prix": 5
+            }, {
+                "nom": "fondant au chocolat",
+                "prix": 2
+            }]
+        }
+
+    }
+}
