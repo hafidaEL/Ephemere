@@ -1,14 +1,13 @@
 {
     "resto": {
         "titre": "le titre",
-        "sliderImg" : "./img/resto-mexique.jpg",
+        "sliderImg" : "./img/resto-italie.jpg",
         "chef": {
-            "nom": "Charles",
-            "prenom": "Hingalls",
-            "age": 45,
-            "photo" : "https://randomuser.me/api/portraits/men/90.jpg",
+            "nom": "Zozo",
+            "prenom": "La Tulipe",
+            "age": 34,
+            "photo" : "https://randomuser.me/api/portraits/men/100.jpg",
             "nbEtoiles" : 1,
-            "description" : "Changer le lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia incidunt ipsam qui saepe harum aliquam at reiciendis, in odio nulla!",
             "logo_menu" : "./img/logo_menu.jpg"
         },
         "menu": {

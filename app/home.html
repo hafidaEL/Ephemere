@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" ng-app="myApp">
 
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,27 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Module myAPP -->
-    <sript src="js/myApp.js"></sript>
+    <script src="js/myApp.js"></script>
+
+    <!-- Les controlleurs -->
+    <script src="js/controllers/homeController.js"></script>
+    <script src="js/controllers/reservationController.js"></script>
+    <script src="js/controllers/cvController.js"></script>
 
     <!-- Les services -->
     <script src="js/services/Resto.js"></script>
-
-    <!-- Les controlleurs -->
-    <script src="js/controllers/HomeController.js"></script>
-    <script src="js/controllers/MenuController.js"></script>
 
     <!-- Devise locale -->
     <script src="js/angular-locale_fr-fr.js"></script>
 
 </head>
 
-<body ng-app="myApp">
+<body>
 
      <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -41,20 +43,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">L'EPHEMERE</a>
+                <a class="navbar-brand" href="#/">L'EPHEMERE</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#/about">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#/contact">Contact</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Réservez votre table</a></li>
+                    <li><a href="#/reservation">Réservez votre table</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -62,70 +64,16 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img id="img_resto" src="img/resto.jpg" alt="restaurant">
-
-            </div>
-            <div class="item">
-               <img id="img_resto" src="img/resto.jpg" alt="restaurant">
-                
-            </div>
-            <div class="item">
-                <img id="img_resto" src="img/resto.jpg" alt="restaurant">     
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
-
-    <!-- Page Content -->
-    <div class="container" ng-controller="HomeController">
-        <div class="carte_chef">
-            <div id="chef">
-                <h1>Chef du mois</h1>
-                 <img ng-src="{{ infos.resto.chef.photo }}" alt="">
-            </div>
-            <div id="descr_chef">
-                <h2>{{ infos.resto.chef.nom }}  {{ infos.resto.chef.prenom }}</h2>
-                <span>Nombre d'étoiles : {{ infos.resto.chef.nbEtoiles }}</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia incidunt ipsam qui saepe harum aliquam at reiciendis, in odio nulla!</p>
-            </div>
-        </div>
-
-        <div class="menu">
-            <h1>MENU du chef</h1>
-            <img ng-src="{{ infos.resto.chef.logo_menu }}" alt="">
-        </div>
-
-        <hr>
+    <div ng-view></div>
+   
 
         <!-- Footer -->
         <footer>
             <div class="row">
-                
+               
             </div>
            
         </footer>
-
-    </div>
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed

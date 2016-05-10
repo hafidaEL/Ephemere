@@ -1,0 +1,15 @@
+ <div class="container">
+        <div class="carte_chef row">
+            <div id="chef" class="col-md-3">
+                <h1>Le détail du cv du chef du mois</h1><br>
+                 <img ng-src="{{ chef.photo }}" class="img-responsive" alt="">
+            </div>
+            <div id="descr_chef" class="col-md-9">
+                <h2>{{ chef.nom }}  {{ chef.prenom }}</h2>
+               <span>Nb étoiles du chef :  </span>
+                <span class="stars-container stars-{{ chef.nbEtoiles * 20}}">★★★★★</span>
+
+                <p>{{ chef.description }}</p>
+            </div>
+     </div>
+</div>

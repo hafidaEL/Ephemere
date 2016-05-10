@@ -1,0 +1,54 @@
+ <div class="container">
+           <form class="form-horizontal">
+                        <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Réservation</legend>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="selectbasic">Nb de personnes</label>
+                          <div class="col-md-4">
+                            <select id="selectbasic" name="selectbasic" class="form-control" ng-model="nbPersonnes">
+                              <option value="1">une personne</option>
+                              <option value="2">2 personnes</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Select Multiple -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="selectmultiple">Heure de réservation</label>
+                          <div class="col-md-4">
+                            <select id="selectmultiple" ng-model="heure" name="selectmultiple" class="form-control" multiple="multiple">
+                              <option value="11h">11h</option>
+                              <option value="11h30">11h30</option>
+                              <option value="12h">12h</option>
+                              <option value="12h30">12h30</option>
+                              <option value="13h">13h</option>
+                              <option value="13h30">13h30</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for=""></label>
+                          <div class="col-md-4">
+                            <button ng-click='envoi=true' id="" name="" class="btn btn-primary">VALIDER</button>
+                          </div>
+                        </div>
+
+                        </fieldset>
+            </form>
+
+    </div>
+
+
+
+    <div class="alert alert-success" ng-show="envoi">
+      Votre réservation  le <strong>{{ today | date }}</strong>
+        pour {{ nbPersonnes }} personne(s) à {{ heure }} a bien été prise en compte.
+        Merci 
+    </div>
+
