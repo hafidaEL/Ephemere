@@ -1,0 +1,7 @@
+.image-col {
+    background-image: url("http://www.chateaucabezac.com/res/uploads/cke/image/couple%20assiette%20vin%20gastro(1).jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 200px;
+}
