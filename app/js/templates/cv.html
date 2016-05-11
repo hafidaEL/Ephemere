@@ -36,11 +36,10 @@
         <div class="col-md-8">
             <h1>Ses recettes préférées</h1>
             <br>
-            <span>- Duo de mini-cheeseburgers au pain doré aux graines</span>
-            <br>
-            <span>- pluma de Pata Negra sauce tandoori et topinambours</span>
-            <br>
-            <span>- Coquillages en tempura, chips de légumes et sauce tartare</span>
+            <ul>
+             <li ng-repeat="r in chef.plats_preferes"> {{ r }} </li>
+            </ul>
+           
         </div>
     </div>
 </div>

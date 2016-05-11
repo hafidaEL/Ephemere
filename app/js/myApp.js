@@ -23,6 +23,10 @@ app.config(['$routeProvider',
         templateUrl: 'js/templates/cv.html',
         controller: 'cvControllerPrev'
       })
+      .when('/admin', {
+        templateUrl: 'js/templates/admin.html',
+        controller: 'adminController'
+      })
       .otherwise({
         redirectTo: '/'
       });

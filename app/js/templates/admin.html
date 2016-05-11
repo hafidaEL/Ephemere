@@ -1,0 +1,73 @@
+<div class="container">
+ <br><br><br><br><br><br><br><br><br>
+
+
+
+
+ Photo Caroussel : <input type="text" ng-model=infos.resto.sliderImg size=150 ><br>
+
+    <div class="row carte_chef">
+        <div id="chef" class="col-md-3">
+          Photo :  <input type="text" ng-model=chef.photo size=150 ><br>
+            <img ng-src="{{ chef.photo }}" class="img-responsive" alt="">
+        </div>
+        <div id="descr_chef" class="col-md-9">
+         
+
+           Nom <input ng-model=chef.nom type="text">
+           Prenom <input ng-model=chef.prenom type="text">
+            
+            <span>Nb étoiles du chef :  </span>
+            <input type="text" ng-model=chef.nbEtoiles> <br>
+            <input type="text" ng-model=chef.age> <br>
+            <input type="text" ng-model=chef.ville> <br>
+
+        </div>
+    </div>
+    <div class="row" style="background-color: #F2F2F2">
+        <div class="col-md-8">
+            <h1>Biographie</h1>
+            <br>
+            <textarea rows="10" cols="80" ng-model=chef.description ></textarea>
+        </div>
+      
+    </div>
+    <div class="row">
+        
+        <div class="col-md-8">
+           <input rows="20" cols="50" ng-model=chef.plat_prefere1 >
+           <input rows="20" cols="50" ng-model=chef.plat_prefere2 >
+           <input rows="20" cols="50" ng-model=chef.plat_prefere3 >
+
+    </div>
+     entree 1
+      nom <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[0].nom ><br>
+      desc <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[0].description ><br>
+      prix <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[0].prix ><br>
+
+ entree 2
+      nom <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[1].nom ><br>
+      desc <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[1].description ><br>
+      prix <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[1].prix ><br>
+
+ plat 1
+      nom <input rows="20" cols="50" ng-model=infos.resto.menu.plats[0].nom ><br>
+      desc <input rows="20" cols="50" ng-model=infos.resto.menu.plats[0].description ><br>
+      prix <input rows="20" cols="50" ng-model=infos.resto.menu.plats[0].prix ><br>
+
+ plat 2
+      nom <input rows="20" cols="50" ng-model=infos.resto.menu.plats[1].nom ><br>
+      desc <input rows="20" cols="50" ng-model=infos.resto.menu.plats[1].description ><br>
+      prix <input rows="20" cols="50" ng-model=infos.resto.menu.plats[1].prix ><br>
+
+ dessert 1
+      nom <input rows="20" cols="50" ng-model=infos.resto.menu.desserts[0].nom ><br>
+      desc <input rows="20" cols="50" ng-model=infos.resto.menu.desserts[0].description ><br>
+      prix <input rows="20" cols="50" ng-model=infos.resto.menu.desserts[0].prix ><br>
+
+ dessert 2
+      nom <input rows="20" cols="50" ng-model=infos.resto.menu.desserts[1].nom ><br>
+      desc <input rows="20" cols="50" ng-model=infos.resto.menu.desserts[1].description ><br>
+      prix <input rows="20" cols="50" ng-model=infos.resto.menu.desserts[1].prix ><br>
+    <button ng-click="enregistrer()">Enregistrer</button>
+</div>
