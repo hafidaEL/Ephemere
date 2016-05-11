@@ -6,25 +6,41 @@
     </div>
     <div class="row carte_chef ">
         <div id="chef" class="col-md-3">
-            <h1>Le détail du cv du chef du mois</h1>
-            <br>
             <img ng-src="{{ chef.photo }}" class="img-responsive" alt="">
         </div>
         <div id="descr_chef" class="col-md-9">
             <h2>{{ chef.nom }}  {{ chef.prenom }}</h2>
             <span>Nb étoiles du chef :  </span>
             <span class="stars-container stars-{{ chef.nbEtoiles * 20}}">★★★★★</span>
-
-            <p>{{ chef.description }}</p>
+            <span>45 ans, Bordeaux</span>
+            <br>
+            <a href="#"><i class="fa fa-facebook-square fa-2x icon-for-cv"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-2x icon-for-cv" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram fa-2x icon-for-cv" aria-hidden="true"></i></a>
         </div>
     </div>
     <div class="row" style="background-color: #F2F2F2">
-        <div class="col-md-9">
+        <div class="col-md-8">
             <h1>Biographie</h1>
+            <br>
             <p>{{ chef.description }}</p>
         </div>
-        <div class="col-md-3 image-col">
+        <div class="col-md-4 image-col-1">
             <!-- <img ng-src="{{ chef.photo }}" class="img-responsive" alt=""> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 image-col-2">
+            <!-- <img ng-src="{{ chef.photo }}" class="img-responsive" alt=""> -->
+        </div>
+        <div class="col-md-8">
+            <h1>Ses recettes préférées</h1>
+            <br>
+            <span>- Duo de mini-cheeseburgers au pain doré aux graines</span>
+            <br>
+            <span>- pluma de Pata Negra sauce tandoori et topinambours</span>
+            <br>
+            <span>- Coquillages en tempura, chips de légumes et sauce tartare</span>
         </div>
     </div>
 </div>
