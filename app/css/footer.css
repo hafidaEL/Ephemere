@@ -1,0 +1,104 @@
+
+/*
+*FOOTER*
+*/
+
+.container {
+	display:flex;
+	justify-content: space-between;
+	padding-top: 80px;
+	line-height :30px;
+}
+
+
+.adress p {
+	color: white;
+	font-size: 16px;
+}
+
+
+.adress a {
+text-decoration: none;
+color:white;
+font-size: 16px;
+}
+
+.fa-map-marker {
+	margin-right: 10px;
+}
+
+.fa-map-marker:hover {
+	color:#3386FF;
+	opacity: 1;
+}
+
+.horaires {
+	 color:white;
+	 margin:auto;
+}
+
+.horaires span {
+	font-size: 25px;
+
+}
+
+
+
+.copyright {
+	color:white;
+}
+
+
+.container-social {
+	display: flex;
+
+}
+.social {
+	width: 200px;
+	height: 200px;
+	color:white;
+	font-size:16px;
+	
+}
+
+.social p {
+	text-align: center;
+}
+
+.fa-facebook-square, .fa-twitter, .fa-instagram {
+	color: white;
+	margin-left: 15px;
+
+}
+
+.fa-facebook-square:hover, .fa-twitter:hover, .fa-instagram:hover {
+	color:#FBFCFA;
+	opacity: 0.1;
+}
+
+.listeliens {
+	color:white;
+	list-style: none;
+}
+
+.listeliens a {
+	text-decoration: none;
+	color:white;
+	font-size: 16px;
+}
+
+.listeliens li:hover  {
+	color:(245 245 245);
+	opacity: 0.1;
+}
+
+
+/*
+*ABOUT*
+*/
+
+.nav-pills {
+display: flex
+}
+
+
