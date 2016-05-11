@@ -1,15 +1,30 @@
- <div class="container">
-        <div class="carte_chef row">
-            <div id="chef" class="col-md-3">
-                <h1>Le détail du cv du chef du mois</h1><br>
-                 <img ng-src="{{ chef.photo }}" class="img-responsive" alt="">
-            </div>
-            <div id="descr_chef" class="col-md-9">
-                <h2>{{ chef.nom }}  {{ chef.prenom }}</h2>
-               <span>Nb étoiles du chef :  </span>
-                <span class="stars-container stars-{{ chef.nbEtoiles * 20}}">★★★★★</span>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img_resto" ng-src="{{ infos.resto.sliderImg }}" alt="restaurant">
+        </div>
+    </div>
+    <div class="row carte_chef ">
+        <div id="chef" class="col-md-3">
+            <h1>Le détail du cv du chef du mois</h1>
+            <br>
+            <img ng-src="{{ chef.photo }}" class="img-responsive" alt="">
+        </div>
+        <div id="descr_chef" class="col-md-9">
+            <h2>{{ chef.nom }}  {{ chef.prenom }}</h2>
+            <span>Nb étoiles du chef :  </span>
+            <span class="stars-container stars-{{ chef.nbEtoiles * 20}}">★★★★★</span>
 
-                <p>{{ chef.description }}</p>
-            </div>
-     </div>
+            <p>{{ chef.description }}</p>
+        </div>
+    </div>
+    <div class="row" style="background-color: #F2F2F2">
+        <div class="col-md-9">
+            <h1>Biographie</h1>
+            <p>{{ chef.description }}</p>
+        </div>
+        <div class="col-md-3 image-col">
+            <!-- <img ng-src="{{ chef.photo }}" class="img-responsive" alt=""> -->
+        </div>
+    </div>
 </div>
