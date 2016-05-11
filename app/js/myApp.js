@@ -15,6 +15,14 @@ app.config(['$routeProvider',
         templateUrl: 'js/templates/cv.html',
         controller: 'cvController'
       })
+      .when('/cvNext', {
+        templateUrl: 'js/templates/cv.html',
+        controller: 'cvControllerNext'
+      })
+      .when('/cvPrev', {
+        templateUrl: 'js/templates/cv.html',
+        controller: 'cvControllerPrev'
+      })
       .otherwise({
         redirectTo: '/'
       });

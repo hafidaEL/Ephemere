@@ -3,10 +3,10 @@
         "titre": "le titre",
         "headerImg" : "images/fond4.png",
         "chef": {
-            "nom": "Charles",
-            "prenom": "Hingalls",
-            "age": 45,
-            "photo" : "https://randomuser.me/api/portraits/med/men/80.jpg",
+            "nom": "Petroni",
+            "prenom": "Maria",
+            "age": 30,
+            "photo" : "https://randomuser.me/api/portraits/med/men/45.jpg",
             "nbEtoiles" : 2
         },
         "menu": {

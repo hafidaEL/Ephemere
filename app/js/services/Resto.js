@@ -8,12 +8,33 @@ app.factory('Resto', function($http){
             return $http.get('data/menu1.json').then(function(response) {    
                         return response.data;
             });
-          },
-          nextMonth : function() {
-             return $http.get('data/nextMonth.json').then(function(response) {    
+          }
+        };
+        return resto;
+    });
+
+
+app.factory('nextMonth', function($http){
+     var next = 
+       {
+         nextMonth : function() {
+            return $http.get('data/nextMonth.json').then(function(response) {    
                         return response.data;
             });
           }
         };
-        return resto;
+        return next;
+    });
+
+
+app.factory('prevMonth', function($http){
+     var prev = 
+       {
+         prevMonth : function() {
+            return $http.get('data/prevMonth.json').then(function(response) {    
+                        return response.data;
+            });
+          }
+        };
+        return next;
     });

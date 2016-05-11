@@ -4,6 +4,7 @@ var app = angular.module('myApp');
 app.controller('cvController', function($scope, Resto) {
     $scope.today = new Date();
 
+// gestion des données du mois en cours
     Resto.infosResto().then(function(data) {
         $scope.infos = data;
         $scope.chef = data.resto.chef;
