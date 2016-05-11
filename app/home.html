@@ -8,6 +8,7 @@
     <title>Home</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -67,13 +68,55 @@
     <div ng-view></div>
    
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-               
+    <!-- Footer -->
+    <footer>
+        <div class="navbar navbar-inverse" role="navigation">
+        <div class="container" id="footer">
+
+        <div class="adress">
+        <p>Adresse</p>
+        <a href="http://maps.google.fr/maps?f=q&hl=fr&q=Place aux Étoiles, saint-denis" target="_blank">
+
+             <i class="fa fa-map-marker" aria-hidden="true"></i>2 Place aux Étoiles <br>
+             93200 SAINT-DENIS <br>
+            </a>
+
             </div>
-           
-        </footer>
+
+
+
+            <ul class="listeliens">
+                <a><li class="bold">Société</li></a>
+                <a><li>À propos</li></a>
+                <a><li>Postuler</li></a>
+                <a><li>Presse</li></a>
+                <a><li>Mentions légales</li></a>
+                <a><li>Contact</li></a>
+            </ul>
+
+
+            <ul class="listeliens">
+                <a><li class="bold">Société</li></a>
+                <a><li>À propos</li></a>
+                <a><li>Postuler</li></a>
+                <a><li>Presse</li></a>
+                <a><li>Mentions légales</li></a>
+                <a><li>Contact</li></a>
+            </ul>
+
+            
+            <div class="social">
+            <p>Rejoignez-nous sur : </p>
+                
+            <a href="#"><i class="fa fa-facebook-square fa-3x "></i></a>
+            <a href="#"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            </div>
+
+            <!--<div class="copyright">Copyright © 2016 L'Ephemère.</div>-->
+            </div>
+            </div>
+    </footer>
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
