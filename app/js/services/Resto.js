@@ -36,5 +36,5 @@ app.factory('prevMonth', function($http){
             });
           }
         };
-        return next;
+        return prev;
     });

@@ -6,7 +6,7 @@
             "nom": "Charles",
             "prenom": "Hingalls",
             "age": 45,
-            "photo" : "https://randomuser.me/api/portraits/med/men/63.jpg",
+            "photo" : "https://randomuser.me/api/portraits/men/63.jpg",
             "nbEtoiles" : 2
         },
         "menu": {
