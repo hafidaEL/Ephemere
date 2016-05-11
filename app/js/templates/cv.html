@@ -11,8 +11,8 @@
         <div id="descr_chef" class="col-md-9">
             <h2>{{ chef.nom }}  {{ chef.prenom }}</h2>
             <span>Nb étoiles du chef :  </span>
-            <span class="stars-container stars-{{ chef.nbEtoiles * 20}}">★★★★★</span>
-            <span>45 ans, Bordeaux</span>
+            <span class="stars-container stars-{{ chef.nbEtoiles * 20}}">★★★★★</span><br>
+            <span>{{ chef.age }} ans </span><span>{{ chef.ville }}</span>
             <br>
             <a href="#"><i class="fa fa-facebook-square fa-2x icon-for-cv"></i></a>
             <a href="#"><i class="fa fa-twitter-square fa-2x icon-for-cv" aria-hidden="true"></i></a>

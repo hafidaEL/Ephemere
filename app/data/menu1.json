@@ -6,6 +6,7 @@
             "nom": "Charles",
             "prenom": "Hingalls",
             "age": 45,
+            "ville": "Bordeaux",
             "photo": "https://randomuser.me/api/portraits/men/90.jpg",
             "nbEtoiles": 1,
             "description": "« Meilleur Ouvrier de France, Robert Micheal est originaire du Pays Basque, sa carrière prend un tournant lorsqu'il arrive au Clos Longchamp, restaurant de l'hôtel Méridien à Paris, dans les cuisines du chef Jean-Marie Meulien. Après de multiples expériences et défis relevés avec succès, il décroche ses 2 étoiles au Guide Michelin avec sa brigade de l'Hostellerie de Plaisance. Ancien rugbyman et boxeur, Robert Michael met un point d'honneur à véhiculer ses valeurs de rigueur, d'exigence et d'amour du produit. »",

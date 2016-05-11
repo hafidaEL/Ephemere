@@ -6,6 +6,7 @@
             "nom": "Zozo",
             "prenom": "La Tulipe",
             "age": 34,
+            "ville": "Nantes",
             "photo" : "https://randomuser.me/api/portraits/men/100.jpg",
             "nbEtoiles" : 1,
             "logo_menu" : "./img/logo_menu.jpg"

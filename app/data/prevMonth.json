@@ -6,6 +6,7 @@
             "nom": "Petroni",
             "prenom": "Maria",
             "age": 30,
+            "ville": "New-york",
             "photo" : "https://randomuser.me/api/portraits/men/88.jpg",
             "nbEtoiles" : 2
         },
