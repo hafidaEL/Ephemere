@@ -130,7 +130,7 @@ footer {
 .img_resto{
     opacity: 0.3;
     width: 100%;
-    height: 10%;
+    max-height: 10%;
 }
 
 
@@ -209,3 +209,106 @@ footer {
 .stars-80:after { width: 80%; }
 .stars-90:after { width: 90%; }
 .stars-100:after { width: 100%; }
+
+/*
+*FOOTER*
+*/
+
+#footer {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    line-height :30px;
+}
+
+
+.adress p {
+    color: white;
+    font-size: 16px;
+}
+
+
+.adress a {
+text-decoration: none;
+color:white;
+font-size: 16px;
+}
+
+.fa-map-marker {
+    margin-right: 10px;
+}
+
+.fa-map-marker:hover {
+    color:#3386FF;
+    opacity: 1;
+}
+
+.horaires {
+     color:white;
+     margin:auto;
+}
+
+.horaires span {
+    font-size: 25px;
+
+}
+
+
+
+.copyright {
+    color:white;
+}
+
+
+.container-social {
+    display: flex;
+
+}
+.social {
+    width: 200px;
+    height: 200px;
+    color:white;
+    font-size:16px;
+    
+}
+
+.social p {
+    text-align: center;
+}
+
+.fa-facebook-square, .fa-twitter, .fa-instagram {
+    color: white;
+    margin-left: 15px;
+
+}
+
+.fa-facebook-square:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color:#FBFCFA;
+    opacity: 0.1;
+}
+
+.listeliens {
+    color:white;
+    list-style: none;
+}
+
+.listeliens a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+}
+
+.listeliens li:hover  {
+    color:(245 245 245);
+    opacity: 0.1;
+}
+
+
+/*
+*ABOUT*
+*/
+
+.nav-pills {
+display: flex
+}
+
