@@ -1,15 +1,15 @@
 {
     "resto": {
         "titre": "le titre",
-        "sliderImg" : "./img/resto-mexique.jpg",
+        "sliderImg": "./img/resto-mexique.jpg",
         "chef": {
             "nom": "Charles",
             "prenom": "Hingalls",
             "age": 45,
-            "photo" : "https://randomuser.me/api/portraits/men/90.jpg",
-            "nbEtoiles" : 1,
-            "description" : "Changer le lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia incidunt ipsam qui saepe harum aliquam at reiciendis, in odio nulla!",
-            "logo_menu" : "./img/logo_menu.jpg"
+            "photo": "https://randomuser.me/api/portraits/men/90.jpg",
+            "nbEtoiles": 1,
+            "description": "« Meilleur Ouvrier de France, Robert Micheal est originaire du Pays Basque, sa carrière prend un tournant lorsqu'il arrive au Clos Longchamp, restaurant de l'hôtel Méridien à Paris, dans les cuisines du chef Jean-Marie Meulien. Après de multiples expériences et défis relevés avec succès, il décroche ses 2 étoiles au Guide Michelin avec sa brigade de l'Hostellerie de Plaisance. Ancien rugbyman et boxeur, Robert Michael met un point d'honneur à véhiculer ses valeurs de rigueur, d'exigence et d'amour du produit. »",
+            "logo_menu": "./img/logo_menu.jpg"
         },
         "menu": {
             "entrees": [{
@@ -18,7 +18,7 @@
                 "prix": 5
             }, {
                 "nom": "surimi",
-                 "description": "des batons de surimi",
+                "description": "des batons de surimi",
                 "prix": 2
             }],
             "plats": [{
@@ -27,7 +27,7 @@
                 "prix": 58
             }, {
                 "nom": "tajine",
-                 "description": "formidable douaz aux saveurs inoubliables",
+                "description": "formidable douaz aux saveurs inoubliables",
                 "prix": 26
             }],
             "desserts": [{

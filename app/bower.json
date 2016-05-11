@@ -1,23 +1,23 @@
 {
-  "name": "Lephemere",
-  "description": "Un restaurant avec un chef différent tous les mois",
-  "main": "",
-  "authors": [
-    "hafida <oumnawfal@gmail.com>"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/hafidaEL/components",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "devDependencies": {
-    "angular": "^1.5.5",
-    "bootstrap": "^3.3.6",
-    "angular-route": "^1.5.5",
-    "font-awesome": "fontawesome#^4.6.2"
-  }
+    "name": "Lephemere",
+    "description": "Un restaurant avec un chef différent tous les mois",
+    "main": "",
+    "authors": [
+        "hafida <oumnawfal@gmail.com>"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/hafidaEL/components",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "angular": "^1.5.5",
+        "bootstrap": "^3.3.6",
+        "angular-route": "^1.5.5",
+        "font-awesome": "^4.6.2"
+    }
 }
