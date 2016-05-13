@@ -27,6 +27,14 @@ app.config(['$routeProvider',
         templateUrl: 'js/templates/admin.html',
         controller: 'adminController'
       })
+      .when('/about', {
+        templateUrl: 'js/templates/about.html',
+        controller: 'homeController'
+      })
+      .when('/contact', {
+        templateUrl: 'js/templates/contact.html',
+        controller: 'homeController'
+      })
       .otherwise({
         redirectTo: '/'
       });
