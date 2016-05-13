@@ -21,31 +21,31 @@
         },
         "menu": {
             "entrees": [{
-                "nom": "Pieds de poulet",
-                "description": "des succulents pieds de poulet",
-                "prix": 5
+                "nom": "Médaillon de rouget roquette et poivron",
+                "description": "Un médaillon de poisson très frais accompagné d'une crème anglaise salée ! une entrée raffinée et gastronomique !",
+                "prix": 6
             }, {
-                "nom": "Surimi",
-                "description": "des batons de surimi",
-                "prix": 2
+                "nom": "Saint Jacques aux asperges vertes",
+                "description": "Quatre magnifiques produits pour ce plat de printemps 'terre et mer'. Ce que j'aime dans cette assiette, c'est la classique association entre le chorizo et la noix de Saint Jacques",
+                "prix": 6
             }],
             "plats": [{
-                "nom": "karane",
-                "description": "farine de poichiches fondante (origine Oujda)",
-                "prix": 58
+                "nom": "Mignons de chevreuil au curry",
+                "description": "Juste le goûter pour se faire un avis",
+                "prix": 8
             }, {
-                "nom": "tajine",
-                "description": "formidable douaz aux saveurs inoubliables",
-                "prix": 26
+                "nom": "Gigot en marinade d'herbes aromatiques",
+                "description": "Délicieuse recette du chef",
+                "prix": 8
             }],
             "desserts": [{
-                "nom": "tiramisu",
-                "description": "tiramisu fait maison",
-                "prix": 5
+                "nom": "Tarte au chocolat",
+                "description": "Tarte chocolat poire",
+                "prix": 6
             }, {
-                "nom": "fondant au chocolat",
-                "description": " périmé",
-                "prix": 1
+                "nom": "Mille-feuille comme à la pâtisserie",
+                "description": "Un mille-feuille réalisé avec délicatesse",
+                "prix": 6
             }]
         }
 

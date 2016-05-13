@@ -1,41 +1,51 @@
 {
     "resto": {
         "titre": "le titre",
-        "sliderImg" : "./img/resto-italie.jpg",
+        "sliderImg1": "./img/slide1.jpg",
+        "sliderImg2": "./img/slide2.jpg",
+        "sliderImg3": "./img/slide3.jpg",
         "chef": {
-            "nom": "Zozo",
-            "prenom": "La Tulipe",
-            "age": 34,
-            "ville": "Nantes",
-            "photo" : "https://randomuser.me/api/portraits/men/100.jpg",
-            "nbEtoiles" : 1,
-            "logo_menu" : "./img/logo_menu.jpg"
+            "nom": "Antonio",
+            "prenom": "Franchesko",
+            "age": 37,
+            "ville": "Venise",
+            "photo": "https://randomuser.me/api/portraits/men/2.jpg",
+            "nbEtoiles": 1,
+            "description": "Un chef très réputé, une cuisine haute gamme ",
+            "logo_menu": "./img/logo_menu.jpg",
+            "plats_preferes" : [
+                                "Minestrone de légumes au lard fumé",
+                                "Risotto aux gambas, courgettes et pancetta croustillante",
+                                "Lasagne aux gambas et coulis de poivrons"]
+            
         },
         "menu": {
             "entrees": [{
-                "nom": "Pied de poulet",
-                "description": "des succulents pieds de poulet",
-                "prix": 5
+                "nom": "Fleur de courgette farcie au fromage de chèvre frais et tapenade",
+                "description": "Des fleurs de courgettes farcies de fromage de chèvre et de tapenade d'olives noires.",
+                "prix": 6
             }, {
-                "nom": "surimi",
-                 "description": "des batons de surimi",
-                "prix": 2
+                "nom": "Carpaccio de saumon au citron vert et baies roses",
+                "description": "Fines lamelles de saumon marinées dans une pâte au citron vert et aux pignons de pin.",
+                "prix": 6
             }],
             "plats": [{
-                "nom": "karane",
-                "description": "farine de poichiches fondante (origine Oujda)",
-                "prix": 58
+                "nom": "Saltimbocca de veau à la mozzarella, tomates cerise au miel",
+                "description": "Des escalopes qui sautent en bouche... l'un des plats préférés des Italiens.",
+                "prix": 8
             }, {
-                "nom": "tajine",
-                 "description": "formidable douaz aux saveurs inoubliables",
-                "prix": 26
+                "nom": "Conchiglie Rigate à la tomate, câpres, aubergine et mozzarella",
+                "description": "Des Conchiglie Rigate accompagnées de légumes",
+                "prix": 8
             }],
             "desserts": [{
-                "nom": "tiramisu",
-                "prix": 5
+                "nom": "Panna cotta au citron vert",
+                "description": "dessert italien crémeux aux parfums frais de citron vert, avec des lamelles de fraises crues",
+                "prix": 6
             }, {
-                "nom": "fondant au chocolat",
-                "prix": 2
+                "nom": "Gratin de poires au marsala",
+                "description": "Poire caramélisée au marsala, garnie d'un sabayon au mascarpone gratiné.",
+                "prix": 6
             }]
         }
 
