@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
 app.config(['$routeProvider',
   function($routeProvider) {
@@ -20,7 +20,7 @@ app.config(['$routeProvider',
         controller: 'cvControllerNext'
       })
       .when('/cvPrev', {
-        templateUrl: 'js/templates/cv.html',
+        templateUrl: 'js/templates/cvPrecedent.html',
         controller: 'cvControllerPrev'
       })
       .when('/admin', {

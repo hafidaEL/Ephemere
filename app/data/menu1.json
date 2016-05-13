@@ -1,28 +1,31 @@
 {
     "resto": {
         "titre": "le titre",
-        "sliderImg": "./img/resto-mexique.jpg",
+        "sliderImg1": "./img/sliderImg1.jpg",
+        "sliderImg2": "./img/sliderImg2.jpg",
+        "sliderImg3": "./img/sliderImg3.jpg",
         "chef": {
-            "nom": "Charles",
-            "prenom": "Hingalls",
-            "age": 45,
+            "nom": "Alyssia",
+            "prenom": "Green",
+            "age": 32,
             "ville": "Bordeaux",
-            "photo": "https://randomuser.me/api/portraits/men/90.jpg",
+            "photo": "https://randomuser.me/api/portraits/women/29.jpg",
             "nbEtoiles": 1,
             "description": "« Meilleur Ouvrier de France, Robert Micheal est originaire du Pays Basque, sa carrière prend un tournant lorsqu'il arrive au Clos Longchamp, restaurant de l'hôtel Méridien à Paris, dans les cuisines du chef Jean-Marie Meulien. Après de multiples expériences et défis relevés avec succès, il décroche ses 2 étoiles au Guide Michelin avec sa brigade de l'Hostellerie de Plaisance. Ancien rugbyman et boxeur, Robert Michael met un point d'honneur à véhiculer ses valeurs de rigueur, d'exigence et d'amour du produit. »",
             "logo_menu": "./img/logo_menu.jpg",
-            "plat_prefere1" :   "Duo de mini-cheeseburgers au pain doré aux graines",
-            "plat_prefere2" : "Pluma de Pata Negra sauce tandoori et topinambours",
-            "plat_prefere3" : "Coquillages en tempura, chips de légumes et sauce tartare"
+            "plats_preferes" : [
+                                "Duo de mini-cheeseburgers au pain doré aux graines",
+                                "Pluma de Pata Negra sauce tandoori et topinambours",
+                                "Coquillages en tempura, chips de légumes et sauce tartare"]
             
         },
         "menu": {
             "entrees": [{
-                "nom": "Pied de poulet",
+                "nom": "Pieds de poulet",
                 "description": "des succulents pieds de poulet",
                 "prix": 5
             }, {
-                "nom": "surimi",
+                "nom": "Surimi",
                 "description": "des batons de surimi",
                 "prix": 2
             }],

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cv-style.css">
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -61,8 +62,8 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/cvPrev">Le cuisinier précédent</a></li>
-                    <li><a href="#/cvNext">Le prochain cuisinier</a></li>
+                    <li><a href="#/cvPrev">Précédemment</a></li>
+                    <li><a href="#/cvNext">Prochainement</a></li>
                     <li><a href="#/reservation">Réservez votre table</a></li>
                 </ul>
             </div>
@@ -73,11 +74,9 @@
 
     <div ng-view></div>
 
-    <!-- Footer -->
+       <!-- Footer -->
     <footer>
-        <div class="navbar navbar-inverse" role="navigation">
-            <div class="container" id="footer">
-
+            <div id="footer">
                 <div class="adress">
                     <p>Adresse</p>
                     <a href="http://maps.google.fr/maps?f=q&hl=fr&q=Place aux Étoiles, saint-denis" target="_blank">
@@ -145,13 +144,11 @@
 
                 <!--<div class="copyright">Copyright © 2016 L'Ephemère.</div>-->
             </div>
-        </div>
     </footer>
-    <script>
-        $('.carousel').carousel({
-            interval: 5000 //changes the speed
-        })
-    </script>
+   
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 </body>
 

@@ -6,13 +6,13 @@
 
 body,
     html {
-        background-size: 110px 69px;
+       
         font-family: 'Playfair Display', serif;
     }
     
     body p {
         font-style: italic;
-        font-size: 16px;
+        /* font-size: 16px; */
     }
     
     .header h1 {
@@ -61,17 +61,17 @@ body,
     h2 {
         border-bottom: 1px solid #444;
         color: #000;
-        font-family: 'Oswald', sans-serif;
+        /* font-family: 'Oswald', sans-serif;
         margin: 20px 0 10px;
         padding: 0 0 10px 0;
-        text-transform: uppercase;
+        text-transform: uppercase; */
     }
     
     h3 {
-        color: #ce2c38;
-        font-family: 'Oswald', sans-serif;
+        color: #337AB7;
+        /* font-family: 'Oswald', sans-serif;
         margin: 10px 0 5px;
-        text-transform: uppercase;
+        text-transform: uppercase; */
     }
     
     .price p {
@@ -82,7 +82,11 @@ body,
         text-align: right;
     }
 
-
+#bloc_menu {
+    width: 85%;
+    /* margin-right: 100px;
+    margin-left: 100px;*/
+ }
 
 
 /*!
@@ -122,7 +126,7 @@ footer {
 
 
 .navbar {
-    background-color: #1F7DB6;
+    /* background-color: #1F7DB6; */
     color: white;
 }
 
@@ -133,6 +137,50 @@ footer {
     max-height: 10%;
 }
 
+/***********************************************************/
+
+/* CAROUSEL */
+
+.carousel {
+    height: 500px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    height: 500px;
+    /*background-color: #777;*/
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+.first-slided {
+    background-color: #ff708e;
+}
+.second-slided {
+    background-color: #288ad6;
+}
+.third-slided {
+    background-color: #0FDEBD;
+}
+.item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
 
 /*!
 * CSS pour carte du cuisinier
@@ -142,10 +190,14 @@ footer {
 .carte_chef{
     
     display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #chef{
     width: 30%;
+    color: black;
 }
 
 #chef img{
@@ -162,10 +214,23 @@ footer {
 }
 
 .menu{
-
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     
+}
+
+   
+#imgMenu {
+    background : url('../img/menu.jpg') 0 0 no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    /*z-index: -1;*/
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
 }
 
 #menu h1{
@@ -173,6 +238,7 @@ footer {
 }
 
 #logo_menu{
+    width: 70%;
     height: 300px;
 }
 
@@ -216,10 +282,12 @@ footer {
 */
 
 #footer {
+    width: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 80px;
     line-height :30px;
+    background-color: #222222;
 }
 
 
@@ -304,12 +372,123 @@ font-size: 16px;
     opacity: 0.1;
 }
 
-
 /*
 *ABOUT*
 */
 
 .nav-pills {
-display: flex
+display: flex;
 }
 
+
+/*
+*Fil Tweeter*
+*/
+
+.commentaires {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F2F2F2;
+    /* background-color: #F2F2F2; */
+}
+
+#titre_comment{
+    position: relative;
+    top:97px;
+    left:58px;
+}
+
+#fil_tweet{
+    position: relative;
+    
+}
+
+
+/*
+* CSS page les cuisiniers précédents
+*/
+
+.chef_prev img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#hover_chef h2{
+    color: white;
+}
+
+#hover_chef{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+a.u-floatLeft {
+    display: none;
+}
+
+.fade {
+  opacity: 1;
+}
+
+.fade.ng-hide {
+  opacity: 0;
+}
+
+.fade.ng-hide-remove, .fade.ng-hide-add {
+  display: block !important;
+}
+
+.fade.ng-hide-remove {
+  transition: all linear 500ms;
+}
+
+.fade.ng-hide-add {
+  transition: all linear 500ms;
+}
+
+.mrg_photo {
+    margin-left: 130px;
+
+}
+
+.pad_photo {
+    padding: 15px;
+}
+
+
+/*
+* CSS pour page admin
+*/
+
+
+.admin{
+    position: relative;
+
+}
+
+   
+#bkg_admin {
+    background : url('../img/bkg_admin.jpg') 0 0 no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+
+}
+
+.border_form {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-left: 35px;
+    border: 1px solid black;
+}

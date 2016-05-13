@@ -1,12 +1,16 @@
-<div class="container">
+<div class="container-fluid admin" >
  <br><br><br><br>
-
+<form class="form-horizontal border_form" role="form">
+<div id="bkg_admin"></div>
 
 <h1>Saisir les nouvelles informations du chef :</h1><br><br>
 
-<label for="">Image du Caroussel :</label> <input type="text" ng-model=infos.resto.sliderImg size=150 ><br><br>
+<label for="">Image 1 du Caroussel :</label> <input type="text" ng-model=infos.resto.sliderImg1 size=50 ><br><br>
+<label for="">Image 2 du Caroussel :</label> <input type="text" ng-model=infos.resto.sliderImg2 size=50 ><br><br>
+<label for="">Image 3 du Caroussel :</label> <input type="text" ng-model=infos.resto.sliderImg3 size=50 ><br><br>
+
 <label for="">Photo du chef :</label>
-<input type="text" ng-model=chef.photo size=150 ><br><br>
+<input type="text" ng-model=chef.photo size=50 ><br><br>
 <div class="row">
         <div class="col-md-3">
             <img ng-src="{{ chef.photo }}" class="img-responsive" alt="">
@@ -27,9 +31,9 @@
 
 <p>Les plats préférés du chef :</p>
 <ul>
-  <li><label for="">Plat préféré 1 :</label><input rows="20" cols="50" ng-model=chef.plat_prefere1 ></li>
-  <li><label for="">Plat préféré 2 :</label><input rows="20" cols="50" ng-model=chef.plat_prefere2 ></li>
-  <li><label for="">Plat préféré 3 :</label><input rows="20" cols="50" ng-model=chef.plat_prefere3 ></li>
+  <li><label for="">Plat préféré 1 :</label><input size=50 ng-model=chef.plats_preferes[0] ></li>
+  <li><label for="">Plat préféré 2 :</label><input size=50 ng-model=chef.plats_preferes[1] ></li>
+  <li><label for="">Plat préféré 3 :</label><input size=50 ng-model=chef.plats_preferes[2] ></li>
 </ul>
 
 <br>
@@ -38,17 +42,17 @@
 
 <p>Les entrées :</p>
  <ul>Entrée 1 :
-   <li><label for="">Nom de l'entrée :</label><input rows="20" cols="50" ng-model=infos.resto.menu.entrees[0].nom ></li>
-   <li><label for="">Description de l'entrée :</label> <input rows="20" cols="50" ng-model=infos.resto.menu.entrees[0].description ></li>
-   <li><label for="">Prix de l'entrée :</label><input rows="20" cols="50" ng-model=infos.resto.menu.entrees[0].prix ></li>
+   <li><label for="">Nom de l'entrée :</label><input size=50 ng-model=infos.resto.menu.entrees[0].nom ></li>
+   <li><label for="">Description de l'entrée :</label> <input size=50 ng-model=infos.resto.menu.entrees[0].description ></li>
+   <li><label for="">Prix de l'entrée :</label><input size=50 ng-model=infos.resto.menu.entrees[0].prix ></li>
  </ul>
 
   <br>
 
 <ul>Entrée 2 :
-  <li><label for="">Nom de l'entrée :</label><input rows="20" cols="50" ng-model=infos.resto.menu.entrees[1].nom ></li>
-  <li><label for="">Description de l'entrée :</label><input rows="20" cols="50" ng-model=infos.resto.menu.entrees[1].description ></li>
-  <li><label for="">Prix de l'entrée :</label><input rows="20" cols="50" ng-model=infos.resto.menu.entrees[1].prix ></li>
+  <li><label for="">Nom de l'entrée :</label><input size=50 ng-model=infos.resto.menu.entrees[1].nom ></li>
+  <li><label for="">Description de l'entrée :</label><input size=50 ng-model=infos.resto.menu.entrees[1].description ></li>
+  <li><label for="">Prix de l'entrée :</label><input size=50 ng-model=infos.resto.menu.entrees[1].prix ></li>
 </ul>
 
 <br>
@@ -57,17 +61,17 @@
 <p>Les plats :</p>
 
 <ul>Plat 1 :
-  <li><label for="">Nom du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.plats[0].nom ></li>
-  <li><label for="">Description du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.plats[0].description ></li>
-  <li><label for="">Prix du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.plats[0].prix ></li>
+  <li><label for="">Nom du plat :</label><input size=50 ng-model=infos.resto.menu.plats[0].nom ></li>
+  <li><label for="">Description du plat :</label><input size=50 ng-model=infos.resto.menu.plats[0].description ></li>
+  <li><label for="">Prix du plat :</label><input size=50 ng-model=infos.resto.menu.plats[0].prix ></li>
 </ul>
 
 <br>
 
  <ul>Plat 2 :
-  <li><label for="">Nom du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.plats[1].nom ></li>
-  <li><label for="">Description du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.plats[1].description ></li>
-  <li><label for="">Prix du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.plats[1].prix ></li>
+  <li><label for="">Nom du plat :</label><input size=50 ng-model=infos.resto.menu.plats[1].nom ></li>
+  <li><label for="">Description du plat :</label><input size=50 ng-model=infos.resto.menu.plats[1].description ></li>
+  <li><label for="">Prix du plat :</label><input size=50 ng-model=infos.resto.menu.plats[1].prix ></li>
 </ul>
 
 <br>
@@ -75,19 +79,22 @@
 <p>Les desserts :</p> 
 
  <ul>Dessert 1 :
-  <li><label for="">Nom du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.desserts[0].nom ></li>
-  <li><label for="">Description du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.desserts[0].description ></li>
-  <li><label for="">Prix du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.desserts[0].prix ></li>
+  <li><label for="">Nom du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[0].nom ></li>
+  <li><label for="">Description du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[0].description ></li>
+  <li><label for="">Prix du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[0].prix ></li>
 </ul>
 
 <br>
 
 <ul>Dessert 2 :
-  <li><label for="">Nom du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.desserts[1].nom ></li>
-  <li><label for="">Description du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.desserts[1].description ></li>
-  <li><label for="">Prix du plat :</label><input rows="20" cols="50" ng-model=infos.resto.menu.desserts[1].prix ></li>
+  <li><label for="">Nom du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[1].nom ></li>
+  <li><label for="">Description du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[1].description ></li>
+  <li><label for="">Prix du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[1].prix ></li>
 </ul>
 
 
 <button ng-click="enregistrer()">Enregistrer</button>
 
+</div>
+
+</form>

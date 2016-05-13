@@ -1,0 +1,23 @@
+<div class="container-fluid mrg_photo" >
+    <br><br><br>
+        <div ng-repeat="chef in chefs">
+          <!--div ng-if="$index % 3 == 0" class="row carte_chef"-->
+            <div class="chef_prev col-md-4">
+             <img ng-src="{{ chef.photo }}" ng-mouseover="selectChef($index)" ng-mouseleave="deselectChef($index)" class="img-responsive pad_photo" alt="">
+            </div>
+          <!--/div-->
+        </div>
+</div>
+
+
+<div id="hover_chef" class="col-md-12 fade" ng-show="afficher">
+        <h2>{{ chefs[numChef].nom }}  {{ chefs[numChef].prenom }}</h2>
+        <span>Nb étoiles du chef :  </span>
+        <span class="stars-container stars-{{ chefs[numChef].nbEtoiles * 20}}">★★★★★</span><br>
+        <span>{{ chefs[numChef].age }} ans </span><span>{{ chefs[numChef].ville }}</span>
+        <br>
+        <a href="#"><i class="fa fa-facebook-square fa-2x icon-for-cv"></i></a>
+        <a href="#"><i class="fa fa-twitter-square fa-2x icon-for-cv" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram fa-2x icon-for-cv" aria-hidden="true"></i></a>
+</div>
+
