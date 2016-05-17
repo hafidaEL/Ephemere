@@ -1,9 +1,9 @@
 {
     "resto": {
         "titre": "le titre",
-        "sliderImg1": "./img/slide1.jpg",
-        "sliderImg2": "./img/slide2.jpg",
-        "sliderImg3": "./img/slide3.jpg",
+        "sliderImg1": "app/img/slide1.jpg",
+        "sliderImg2": "app/img/slide2.jpg",
+        "sliderImg3": "app/img/slide3.jpg",
         "chef": {
             "nom": "Antonio",
             "prenom": "Franchesko",

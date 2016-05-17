@@ -1,9 +1,9 @@
 {
     "resto": {
         "titre": "le titre",
-        "sliderImg1": "./img/sliderImg1.jpg",
-        "sliderImg2": "./img/sliderImg2.jpg",
-        "sliderImg3": "./img/sliderImg3.jpg",
+        "sliderImg1": "app/img/sliderImg1.jpg",
+        "sliderImg2": "app/img/sliderImg2.jpg",
+        "sliderImg3": "app/img/sliderImg3.jpg",
         "chef": {
             "nom": "Jason",
             "prenom": "Pearl",
