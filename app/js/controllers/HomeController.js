@@ -4,7 +4,7 @@ var app = angular.module('myApp');
 app.controller('homeController', function($scope, Resto) {
         $scope.today = new Date();
 
-         Resto.infosResto().then(function(data) {
+         Resto.infosResto('courant').then(function(data) {
              $scope.infos = data;
              //console.log($scope.infos.resto.chef) ;
          }).catch(function() {

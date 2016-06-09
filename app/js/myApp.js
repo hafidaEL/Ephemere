@@ -1,3 +1,5 @@
+var API_URL = "https://ephemere.herokuapp.com" ;
+//var API_URL = "http://localhost:8000" ;
 var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
 app.config(['$routeProvider',
@@ -25,7 +27,13 @@ app.config(['$routeProvider',
       })
       .when('/admin', {
         templateUrl: 'app/js/templates/admin.html',
-        controller: 'adminController'
+        controller: 'adminController',
+        paramChef: 'courant'
+      })
+      .when('/chefSuivant', {
+        templateUrl: 'app/js/templates/admin.html',
+        controller: 'adminController',
+        paramChef: 'suivant'
       })
       .when('/about', {
         templateUrl: 'app/js/templates/about.html',

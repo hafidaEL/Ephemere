@@ -3,7 +3,7 @@
 <form class="form-horizontal border_form" role="form">
 <div id="bkg_admin"></div>
 
-<h1>Saisir les nouvelles informations du chef :</h1><br><br>
+<h1>Saisir les nouvelles informations du chef du mois {{ paramChef }}:</h1><br><br>
 
 <label for="">Image 1 du Caroussel :</label> <input type="text" ng-model=infos.resto.sliderImg1 size=50 ><br><br>
 <label for="">Image 2 du Caroussel :</label> <input type="text" ng-model=infos.resto.sliderImg2 size=50 ><br><br>
@@ -92,9 +92,12 @@
   <li><label for="">Prix du plat :</label><input size=50 ng-model=infos.resto.menu.desserts[1].prix ></li>
 </ul>
 
-
-<button ng-click="enregistrer()">Enregistrer</button>
-
+<button class="btn btn-lg btn-primary" ng-hide='paramChef=="courant"'><a class="lien" href="#/admin"> Chef Mois courant</a></button>
+<button class="btn btn-lg btn-primary" ng-click="enregistrer()">Enregistrer</button>
+<button class="btn btn-lg btn-primary" ng-hide='paramChef=="suivant"'><a class="lien" href="#/chefSuivant"> Chef Mois suivant</a></button>
+<button class="btn btn-lg btn-primary" ng-click="basculer()">Basculer</button>
 </div>
 
 </form>
+
+
