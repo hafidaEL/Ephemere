@@ -26,7 +26,7 @@ app.controller('adminController', function($window, $scope, Resto, $route, $http
              .then(
                   function(response){
                   console.log(" donnees envoyees "+data);
-                  $window.location.href = '/Ephemere';
+                  $window.location.href = 'http://hafidael.github.io/Ephemere';
               }, 
                   function(response){
                   alert(' erreur ' + response);
@@ -40,7 +40,7 @@ app.controller('adminController', function($window, $scope, Resto, $route, $http
              .then(
                   function(response){
                   console.log(" basculement ok"+response);
-                  $window.location.href = '/Ephemere';
+                  $window.location.href = 'http://hafidael.github.io/Ephemere';
               }, 
                   function(response){
                   alert(' erreur ' + response);
